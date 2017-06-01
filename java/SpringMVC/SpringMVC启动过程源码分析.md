@@ -7,7 +7,7 @@
 
 DispatcherServlet->FrameworkServlet->(extends)HttpServletBean (impl)ApplicationContextAware->HttpServlet->GenericServlet
 
-DispatcherServlet->
+DispatcherServlet->**静态代码块**
 
 ```
 static {
@@ -28,7 +28,7 @@ GenericServlet->init()方法为空
 
 HttpServlet没有实现init()方法
 
-HttpServletBean ->
+HttpServletBean ->**init()**
 ```
 		// Set bean properties from init parameters.
 		try {
